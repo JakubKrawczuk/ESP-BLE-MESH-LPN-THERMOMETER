@@ -1,0 +1,20 @@
+{
+    "project_name":       "bootloader",
+    "project_path":       "C:/ESP-IDF/esp-idf-v4.2/components/bootloader/subproject",
+    "build_dir":          "C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/build/bootloader",
+    "config_file":        "C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/sdkconfig",
+    "config_defaults":    "",
+    "app_elf":            "bootloader.elf",
+    "app_bin":            "bootloader.bin",
+    "git_revision":       "v4.2-dirty",
+    "target":             "esp32",
+    "phy_data_partition": "",
+    "monitor_baud" :      "115200",
+    "monitor_toolprefix": "xtensa-esp32-elf-",
+    "config_environment" : {
+        "COMPONENT_KCONFIGS" : "C:/ESP-IDF/esp-idf-v4.2/components/efuse/Kconfig;C:/ESP-IDF/esp-idf-v4.2/components/esp32/Kconfig;C:/ESP-IDF/esp-idf-v4.2/components/esp_common/Kconfig;C:/ESP-IDF/esp-idf-v4.2/components/log/Kconfig;C:/ESP-IDF/esp-idf-v4.2/components/spi_flash/Kconfig",
+        "COMPONENT_KCONFIGS_PROJBUILD" : "C:/ESP-IDF/esp-idf-v4.2/components/bootloader/Kconfig.projbuild;C:/ESP-IDF/esp-idf-v4.2/components/esptool_py/Kconfig.projbuild;C:/ESP-IDF/esp-idf-v4.2/components/partition_table/Kconfig.projbuild"
+    },
+    "build_components" : [ "bootloader", "bootloader_support", "efuse", "esp32", "esp_common", "esp_rom", "esptool_py", "log", "main", "micro-ecc", "partition_table", "soc", "spi_flash", "xtensa", "" ],
+    "build_component_paths" : [ "C:/ESP-IDF/esp-idf-v4.2/components/bootloader", "C:/ESP-IDF/esp-idf-v4.2/components/bootloader_support", "C:/ESP-IDF/esp-idf-v4.2/components/efuse", "C:/ESP-IDF/esp-idf-v4.2/components/esp32", "C:/ESP-IDF/esp-idf-v4.2/components/esp_common", "C:/ESP-IDF/esp-idf-v4.2/components/esp_rom", "C:/ESP-IDF/esp-idf-v4.2/components/esptool_py", "C:/ESP-IDF/esp-idf-v4.2/components/log", "C:/ESP-IDF/esp-idf-v4.2/components/bootloader/subproject/main", "C:/ESP-IDF/esp-idf-v4.2/components/bootloader/subproject/components/micro-ecc", "C:/ESP-IDF/esp-idf-v4.2/components/partition_table", "C:/ESP-IDF/esp-idf-v4.2/components/soc", "C:/ESP-IDF/esp-idf-v4.2/components/spi_flash", "C:/ESP-IDF/esp-idf-v4.2/components/xtensa", "" ]
+}

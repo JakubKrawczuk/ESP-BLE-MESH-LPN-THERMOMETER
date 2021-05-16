@@ -1,0 +1,5 @@
+source "C:/ESP-IDF/esp-idf-v4.2/components/app_update/Kconfig.projbuild"
+source "C:/ESP-IDF/esp-idf-v4.2/components/bootloader/Kconfig.projbuild"
+source "C:/ESP-IDF/esp-idf-v4.2/components/esptool_py/Kconfig.projbuild"
+source "C:/ESP-IDF/esp-idf-v4.2/components/partition_table/Kconfig.projbuild"
+source "C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/main/Kconfig.projbuild"
