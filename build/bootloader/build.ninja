@@ -166,7 +166,7 @@ build project_elf_src.c: CUSTOM_COMMAND
 # Custom command for CMakeFiles\confserver
 
 build CMakeFiles/confserver: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\JK\eclipse-workspace\thermometer_lpn_esp_ble_mesh\build\bootloader && C:\Users\JK\.espressif\python_env\idf4.2_py3.7_env\Scripts\python.exe C:/ESP-IDF/esp-idf-v4.2/tools/kconfig_new/prepare_kconfig_files.py --env-file C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/build/bootloader/config.env && C:\Users\JK\.espressif\python_env\idf4.2_py3.7_env\Scripts\python.exe C:/ESP-IDF/esp-idf-v4.2/tools/kconfig_new/confserver.py --env-file C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/build/bootloader/config.env --kconfig C:/ESP-IDF/esp-idf-v4.2/Kconfig --sdkconfig-rename C:/ESP-IDF/esp-idf-v4.2/sdkconfig.rename --config C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/sdkconfig"
+  COMMAND = cmd.exe /C "cd /D C:\Users\JK\eclipse-workspace\thermometer_lpn_esp_ble_mesh\build\bootloader && python C:/ESP-IDF/esp-idf-v4.2/tools/kconfig_new/prepare_kconfig_files.py --env-file C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/build/bootloader/config.env && python C:/ESP-IDF/esp-idf-v4.2/tools/kconfig_new/confserver.py --env-file C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/build/bootloader/config.env --kconfig C:/ESP-IDF/esp-idf-v4.2/Kconfig --sdkconfig-rename C:/ESP-IDF/esp-idf-v4.2/sdkconfig.rename --config C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/sdkconfig"
   pool = console
 
 
@@ -174,7 +174,7 @@ build CMakeFiles/confserver: CUSTOM_COMMAND
 # Custom command for CMakeFiles\erase_flash
 
 build CMakeFiles/erase_flash: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\ESP-IDF\esp-idf-v4.2\components\esptool_py && C:\Users\JK\.espressif\tools\cmake\3.16.4\bin\cmake.exe -D IDF_PATH="C:/ESP-IDF/esp-idf-v4.2" -D ESPTOOLPY="C:\Users\JK\.espressif\python_env\idf4.2_py3.7_env\Scripts\python.exe C:/ESP-IDF/esp-idf-v4.2/components/esptool_py/esptool/esptool.py --chip esp32" -D ESPTOOL_ARGS="erase_flash" -P run_esptool.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\ESP-IDF\esp-idf-v4.2\components\esptool_py && C:\Users\JK\.espressif\tools\cmake\3.16.4\bin\cmake.exe -D IDF_PATH="C:/ESP-IDF/esp-idf-v4.2" -D ESPTOOLPY="python C:/ESP-IDF/esp-idf-v4.2/components/esptool_py/esptool/esptool.py --chip esp32" -D ESPTOOL_ARGS="erase_flash" -P run_esptool.cmake"
   pool = console
 
 
@@ -188,7 +188,7 @@ build CMakeFiles/app: phony || _project_elf_src bootloader.elf esp-idf/bootloade
 # Custom command for CMakeFiles\menuconfig
 
 build CMakeFiles/menuconfig: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\JK\eclipse-workspace\thermometer_lpn_esp_ble_mesh\build\bootloader && C:\Users\JK\.espressif\python_env\idf4.2_py3.7_env\Scripts\python.exe C:/ESP-IDF/esp-idf-v4.2/tools/kconfig_new/prepare_kconfig_files.py --env-file C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/build/bootloader/config.env && C:\Users\JK\.espressif\python_env\idf4.2_py3.7_env\Scripts\python.exe C:/ESP-IDF/esp-idf-v4.2/tools/kconfig_new/confgen.py --kconfig C:/ESP-IDF/esp-idf-v4.2/Kconfig --sdkconfig-rename C:/ESP-IDF/esp-idf-v4.2/sdkconfig.rename --config C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/sdkconfig --env-file C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/build/bootloader/config.env --env IDF_TARGET=esp32 --dont-write-deprecated --output config C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/sdkconfig && C:\Users\JK\.espressif\python_env\idf4.2_py3.7_env\Scripts\python.exe C:/ESP-IDF/esp-idf-v4.2/tools/check_term.py && C:\Users\JK\.espressif\tools\cmake\3.16.4\bin\cmake.exe -E env COMPONENT_KCONFIGS_SOURCE_FILE=C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/build/bootloader/kconfigs.in COMPONENT_KCONFIGS_PROJBUILD_SOURCE_FILE=C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/build/bootloader/kconfigs_projbuild.in IDF_CMAKE=y KCONFIG_CONFIG=C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/sdkconfig IDF_TARGET=esp32 C:\Users\JK\.espressif\python_env\idf4.2_py3.7_env\Scripts\python.exe C:/ESP-IDF/esp-idf-v4.2/tools/kconfig_new/menuconfig.py C:/ESP-IDF/esp-idf-v4.2/Kconfig && C:\Users\JK\.espressif\python_env\idf4.2_py3.7_env\Scripts\python.exe C:/ESP-IDF/esp-idf-v4.2/tools/kconfig_new/confgen.py --kconfig C:/ESP-IDF/esp-idf-v4.2/Kconfig --sdkconfig-rename C:/ESP-IDF/esp-idf-v4.2/sdkconfig.rename --config C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/sdkconfig --env-file C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/build/bootloader/config.env --env IDF_TARGET=esp32 --output config C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/sdkconfig"
+  COMMAND = cmd.exe /C "cd /D C:\Users\JK\eclipse-workspace\thermometer_lpn_esp_ble_mesh\build\bootloader && python C:/ESP-IDF/esp-idf-v4.2/tools/kconfig_new/prepare_kconfig_files.py --env-file C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/build/bootloader/config.env && python C:/ESP-IDF/esp-idf-v4.2/tools/kconfig_new/confgen.py --kconfig C:/ESP-IDF/esp-idf-v4.2/Kconfig --sdkconfig-rename C:/ESP-IDF/esp-idf-v4.2/sdkconfig.rename --config C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/sdkconfig --env-file C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/build/bootloader/config.env --env IDF_TARGET=esp32 --dont-write-deprecated --output config C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/sdkconfig && python C:/ESP-IDF/esp-idf-v4.2/tools/check_term.py && C:\Users\JK\.espressif\tools\cmake\3.16.4\bin\cmake.exe -E env COMPONENT_KCONFIGS_SOURCE_FILE=C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/build/bootloader/kconfigs.in COMPONENT_KCONFIGS_PROJBUILD_SOURCE_FILE=C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/build/bootloader/kconfigs_projbuild.in IDF_CMAKE=y KCONFIG_CONFIG=C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/sdkconfig IDF_TARGET=esp32 python C:/ESP-IDF/esp-idf-v4.2/tools/kconfig_new/menuconfig.py C:/ESP-IDF/esp-idf-v4.2/Kconfig && python C:/ESP-IDF/esp-idf-v4.2/tools/kconfig_new/confgen.py --kconfig C:/ESP-IDF/esp-idf-v4.2/Kconfig --sdkconfig-rename C:/ESP-IDF/esp-idf-v4.2/sdkconfig.rename --config C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/sdkconfig --env-file C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/build/bootloader/config.env --env IDF_TARGET=esp32 --output config C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/sdkconfig"
   pool = console
 
 
@@ -202,7 +202,7 @@ build CMakeFiles/gen_project_binary: phony .bin_timestamp || _project_elf_src bo
 # Custom command for .bin_timestamp
 
 build .bin_timestamp: CUSTOM_COMMAND bootloader.elf || _project_elf_src bootloader.elf esp-idf/bootloader_support/libbootloader_support.a esp-idf/efuse/libefuse.a esp-idf/log/liblog.a esp-idf/main/libmain.a esp-idf/micro-ecc/libmicro-ecc.a esp-idf/soc/libsoc.a esp-idf/soc/soc/esp32/libsoc_esp32.a esp-idf/spi_flash/libspi_flash.a
-  COMMAND = cmd.exe /C "cd /D C:\Users\JK\eclipse-workspace\thermometer_lpn_esp_ble_mesh\build\bootloader && C:\Users\JK\.espressif\python_env\idf4.2_py3.7_env\Scripts\python.exe C:/ESP-IDF/esp-idf-v4.2/components/esptool_py/esptool/esptool.py --chip esp32 elf2image --flash_mode dio --flash_freq 40m --flash_size 2MB -o C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/build/bootloader/bootloader.bin C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/build/bootloader/bootloader.elf && C:\Users\JK\.espressif\tools\cmake\3.16.4\bin\cmake.exe -E echo "Generated C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/build/bootloader/bootloader.bin" && C:\Users\JK\.espressif\tools\cmake\3.16.4\bin\cmake.exe -E md5sum C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/build/bootloader/bootloader.bin > C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/build/bootloader/.bin_timestamp"
+  COMMAND = cmd.exe /C "cd /D C:\Users\JK\eclipse-workspace\thermometer_lpn_esp_ble_mesh\build\bootloader && python C:/ESP-IDF/esp-idf-v4.2/components/esptool_py/esptool/esptool.py --chip esp32 elf2image --flash_mode dio --flash_freq 40m --flash_size 2MB -o C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/build/bootloader/bootloader.bin C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/build/bootloader/bootloader.elf && C:\Users\JK\.espressif\tools\cmake\3.16.4\bin\cmake.exe -E echo "Generated C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/build/bootloader/bootloader.bin" && C:\Users\JK\.espressif\tools\cmake\3.16.4\bin\cmake.exe -E md5sum C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/build/bootloader/bootloader.bin > C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/build/bootloader/.bin_timestamp"
   DESC = Generating binary image from built executable
   restat = 1
 
@@ -219,21 +219,21 @@ build CMakeFiles/monitor: CUSTOM_COMMAND
 # Custom command for CMakeFiles\size
 
 build CMakeFiles/size: CUSTOM_COMMAND bootloader.elf || _project_elf_src bootloader.elf esp-idf/bootloader_support/libbootloader_support.a esp-idf/efuse/libefuse.a esp-idf/log/liblog.a esp-idf/main/libmain.a esp-idf/micro-ecc/libmicro-ecc.a esp-idf/soc/libsoc.a esp-idf/soc/soc/esp32/libsoc_esp32.a esp-idf/spi_flash/libspi_flash.a
-  COMMAND = cmd.exe /C "cd /D C:\Users\JK\eclipse-workspace\thermometer_lpn_esp_ble_mesh\build\bootloader && C:\Users\JK\.espressif\python_env\idf4.2_py3.7_env\Scripts\python.exe C:/ESP-IDF/esp-idf-v4.2/tools/idf_size.py --target esp32 C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/build/bootloader/bootloader.map"
+  COMMAND = cmd.exe /C "cd /D C:\Users\JK\eclipse-workspace\thermometer_lpn_esp_ble_mesh\build\bootloader && python C:/ESP-IDF/esp-idf-v4.2/tools/idf_size.py --target esp32 C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/build/bootloader/bootloader.map"
 
 
 #############################################
 # Custom command for CMakeFiles\size-files
 
 build CMakeFiles/size-files: CUSTOM_COMMAND bootloader.elf || _project_elf_src bootloader.elf esp-idf/bootloader_support/libbootloader_support.a esp-idf/efuse/libefuse.a esp-idf/log/liblog.a esp-idf/main/libmain.a esp-idf/micro-ecc/libmicro-ecc.a esp-idf/soc/libsoc.a esp-idf/soc/soc/esp32/libsoc_esp32.a esp-idf/spi_flash/libspi_flash.a
-  COMMAND = cmd.exe /C "cd /D C:\Users\JK\eclipse-workspace\thermometer_lpn_esp_ble_mesh\build\bootloader && C:\Users\JK\.espressif\python_env\idf4.2_py3.7_env\Scripts\python.exe C:/ESP-IDF/esp-idf-v4.2/tools/idf_size.py --target esp32 --files C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/build/bootloader/bootloader.map"
+  COMMAND = cmd.exe /C "cd /D C:\Users\JK\eclipse-workspace\thermometer_lpn_esp_ble_mesh\build\bootloader && python C:/ESP-IDF/esp-idf-v4.2/tools/idf_size.py --target esp32 --files C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/build/bootloader/bootloader.map"
 
 
 #############################################
 # Custom command for CMakeFiles\size-components
 
 build CMakeFiles/size-components: CUSTOM_COMMAND bootloader.elf || _project_elf_src bootloader.elf esp-idf/bootloader_support/libbootloader_support.a esp-idf/efuse/libefuse.a esp-idf/log/liblog.a esp-idf/main/libmain.a esp-idf/micro-ecc/libmicro-ecc.a esp-idf/soc/libsoc.a esp-idf/soc/soc/esp32/libsoc_esp32.a esp-idf/spi_flash/libspi_flash.a
-  COMMAND = cmd.exe /C "cd /D C:\Users\JK\eclipse-workspace\thermometer_lpn_esp_ble_mesh\build\bootloader && C:\Users\JK\.espressif\python_env\idf4.2_py3.7_env\Scripts\python.exe C:/ESP-IDF/esp-idf-v4.2/tools/idf_size.py --target esp32 --archives C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/build/bootloader/bootloader.map"
+  COMMAND = cmd.exe /C "cd /D C:\Users\JK\eclipse-workspace\thermometer_lpn_esp_ble_mesh\build\bootloader && python C:/ESP-IDF/esp-idf-v4.2/tools/idf_size.py --target esp32 --archives C:/Users/JK/eclipse-workspace/thermometer_lpn_esp_ble_mesh/build/bootloader/bootloader.map"
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -1346,21 +1346,21 @@ build esp-idf/efuse/edit_cache: phony esp-idf/efuse/CMakeFiles/edit_cache.util
 # Custom command for esp-idf\efuse\CMakeFiles\efuse_test_table
 
 build esp-idf/efuse/CMakeFiles/efuse_test_table: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\JK\eclipse-workspace\thermometer_lpn_esp_ble_mesh\build\bootloader\esp-idf\efuse && C:\Users\JK\.espressif\python_env\idf4.2_py3.7_env\Scripts\python.exe C:/ESP-IDF/esp-idf-v4.2/components/efuse/efuse_table_gen.py C:/ESP-IDF/esp-idf-v4.2/components/efuse/test/esp_efuse_test_table.csv -t esp32 --max_blk_len 192"
+  COMMAND = cmd.exe /C "cd /D C:\Users\JK\eclipse-workspace\thermometer_lpn_esp_ble_mesh\build\bootloader\esp-idf\efuse && python C:/ESP-IDF/esp-idf-v4.2/components/efuse/efuse_table_gen.py C:/ESP-IDF/esp-idf-v4.2/components/efuse/test/esp_efuse_test_table.csv -t esp32 --max_blk_len 192"
 
 
 #############################################
 # Custom command for esp-idf\efuse\CMakeFiles\efuse_common_table
 
 build esp-idf/efuse/CMakeFiles/efuse_common_table: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\JK\eclipse-workspace\thermometer_lpn_esp_ble_mesh\build\bootloader\esp-idf\efuse && C:\Users\JK\.espressif\python_env\idf4.2_py3.7_env\Scripts\python.exe C:/ESP-IDF/esp-idf-v4.2/components/efuse/efuse_table_gen.py C:/ESP-IDF/esp-idf-v4.2/components/efuse/esp32/esp_efuse_table.csv -t esp32 --max_blk_len 192"
+  COMMAND = cmd.exe /C "cd /D C:\Users\JK\eclipse-workspace\thermometer_lpn_esp_ble_mesh\build\bootloader\esp-idf\efuse && python C:/ESP-IDF/esp-idf-v4.2/components/efuse/efuse_table_gen.py C:/ESP-IDF/esp-idf-v4.2/components/efuse/esp32/esp_efuse_table.csv -t esp32 --max_blk_len 192"
 
 
 #############################################
 # Custom command for esp-idf\efuse\CMakeFiles\show_efuse_table
 
 build esp-idf/efuse/CMakeFiles/show_efuse_table: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\JK\eclipse-workspace\thermometer_lpn_esp_ble_mesh\build\bootloader\esp-idf\efuse && C:\Users\JK\.espressif\python_env\idf4.2_py3.7_env\Scripts\python.exe C:/ESP-IDF/esp-idf-v4.2/components/efuse/efuse_table_gen.py C:/ESP-IDF/esp-idf-v4.2/components/efuse/esp32/esp_efuse_table.csv -t esp32 --max_blk_len 192 --info"
+  COMMAND = cmd.exe /C "cd /D C:\Users\JK\eclipse-workspace\thermometer_lpn_esp_ble_mesh\build\bootloader\esp-idf\efuse && python C:/ESP-IDF/esp-idf-v4.2/components/efuse/efuse_table_gen.py C:/ESP-IDF/esp-idf-v4.2/components/efuse/esp32/esp_efuse_table.csv -t esp32 --max_blk_len 192 --info"
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
